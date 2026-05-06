@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+.heroSection {
+    min-height: 100vh;
+    width: 100%;
+    background: linear-gradient(#0000000a, #00000078), url(/src/assets/hero-background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 2rem 0;
+    display: flex;
+    justify-content: center;
+
+}
+
+main {
+    width: 85%;
+    min-height: 85vh;
+    background-color: transparent;
+    backdrop-filter: blur(0.7rem);
+    border: 1px solid #6f696936;
+    border-radius: 15px;
+    margin-top: 2rem;
+    transition: all 1s;
+}
+
+main:hover {
+    box-shadow: 1px 1px 10px 5px #0000006b;
+    backdrop-filter: blur(1.5rem);
+}
+
+.mainContainer {
+    display: flex;
+    flex-direction: column;
+    /*! justify-content: center; */
+    align-items: center;
+    min-height: 85vh;
+
+}
+
+.navbar {
+    width: 100%;
+    margin-top: 2rem;
+    background: transparent !important;
+    border: 1px solid #00000061;
+    border-radius: 15px;
+}
+
+.dropdown-item {
+    color: black !important
+}
+
+.navbar a {
+    color: #fff
+}
+
+.heroText {
+    color: #fff
+}
+
+.heroText h1 {
+    font-size: 2.5rem;
+}
+
+@media screen and (max-width:991px) {
+    .heroText h1 {
+        font-size: 2rem;
+    }
+}
+
+
+.heroText p {
+    width: 70%;
+    font-size: 1rem
+}
+
+@media screen and (max-width:576px) {
+    .heroText h1 {
+        font-size: 1.5rem;
+    }
+
+    .heroText p {
+        width: 85%;
+        font-size: 0.8rem
+    }
+
+    main {
+        margin-top: 1rem
+    }
+}
+
+.heroText button {
+    border: 1px solid #ffffff61;
+    font-size: 0.9rem;
+    padding: 0.6rem 0.9rem;
+    border-radius: 12px;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+.heroMainPart {
+    /* background-color: yellow; */
+    width: 100%;
+    height: 65%;
+    margin-top: 3.5rem;
+}
+
+.heroMainPart img {
+    width: 20rem;
+    transition: all 1s;
+}
+
+.heroMainPart img:hover {
+    transform: scale(1.2)
+}
+
+@media screen and (max-width:991px) {
+    .heroMainPart img {
+        width: 15rem;
+    }
+}
+
+
+
+
+.lllpWhiteSection {
+    background-color: #fff;
+    color: #111;
+    padding: 5rem 0;
+}
+
+.lllpWhiteSection h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.lllpWhiteSection ul {
+    padding-left: 1.2rem;
+}
+
+.lllpWhiteSection li {
+    margin-bottom: 0.8rem;
+    font-size: 1rem;
+}
+
+.lllpWhiteImage {
+    width: 100%;
+    border-radius: 15px;
+}
