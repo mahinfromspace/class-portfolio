@@ -14,7 +14,6 @@
     padding: 2rem 0;
     display: flex;
     justify-content: center;
-
 }
 
 main {
@@ -36,10 +35,8 @@ main:hover {
 .mainContainer {
     display: flex;
     flex-direction: column;
-    /*! justify-content: center; */
     align-items: center;
     min-height: 85vh;
-
 }
 
 .navbar {
@@ -71,7 +68,6 @@ main:hover {
         font-size: 2rem;
     }
 }
-
 
 .heroText p {
     width: 70%;
@@ -105,7 +101,6 @@ main:hover {
 }
 
 .heroMainPart {
-    /* background-color: yellow; */
     width: 100%;
     height: 65%;
     margin-top: 3.5rem;
@@ -125,9 +120,6 @@ main:hover {
         width: 15rem;
     }
 }
-
-
-
 
 .lllpWhiteSection {
     background-color: #fff;
