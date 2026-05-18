@@ -1158,3 +1158,319 @@ main:hover {
         margin-bottom: 2rem;
     }
 }
+
+/* Poster Assignment Pages */
+
+.posterHeroSection {
+    background:
+        linear-gradient(rgba(25, 10, 20, 0.25), rgba(5, 8, 15, 0.75)),
+        url(/src/assets/hero-background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.oceanPosterHero {
+    background:
+        radial-gradient(circle at 20% 20%, rgba(126, 221, 235, 0.22), transparent 30%),
+        linear-gradient(135deg, rgba(0, 126, 145, 0.95), rgba(2, 41, 63, 0.95)),
+        url(/src/assets/hero-background.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.posterHeroText {
+    animation: posterFadeUp 0.9s ease both;
+}
+
+.posterLabel,
+.posterSectionHeader span,
+.posterCardText span,
+.posterReflectionCard span,
+.posterPaletteCard span {
+    display: inline-block;
+    padding: 9px 18px;
+    border-radius: 50px;
+    background: rgba(255, 255, 255, 0.18);
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 18px;
+    border: 1px solid rgba(255, 255, 255, 0.26);
+}
+
+.posterProjectSection {
+    padding: 110px 0;
+    background:
+        radial-gradient(circle at 12% 18%, rgba(255, 211, 218, 0.42), transparent 28%),
+        radial-gradient(circle at 88% 75%, rgba(101, 46, 68, 0.22), transparent 34%),
+        linear-gradient(135deg, #f8d0d5 0%, #f3c4cb 52%, #ead8ef 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.oceanPosterSection {
+    background:
+        radial-gradient(circle at 15% 20%, rgba(174, 229, 238, 0.42), transparent 28%),
+        radial-gradient(circle at 90% 78%, rgba(2, 73, 100, 0.36), transparent 35%),
+        linear-gradient(135deg, #d8f4f6 0%, #b8e5ec 45%, #0d6f83 100%);
+}
+
+.posterPaletteSection {
+    padding: 110px 0;
+    background:
+        radial-gradient(circle at 18% 20%, rgba(117, 54, 80, 0.18), transparent 30%),
+        linear-gradient(135deg, #24131c 0%, #3a1e2c 45%, #120a10 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.oceanPaletteSection {
+    background:
+        radial-gradient(circle at 15% 18%, rgba(136, 220, 232, 0.22), transparent 30%),
+        linear-gradient(135deg, #052f3d 0%, #075d70 48%, #02141d 100%);
+}
+
+.posterProjectSection::before,
+.posterPaletteSection::before {
+    content: "";
+    position: absolute;
+    inset: 45px 70px;
+    border: 1px solid rgba(255, 255, 255, 0.24);
+    border-radius: 38px;
+    pointer-events: none;
+}
+
+.posterPageContainer {
+    width: 85%;
+    max-width: 1320px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+}
+
+.posterSectionHeader {
+    text-align: center;
+    max-width: 820px;
+    margin: 0 auto 55px;
+    animation: posterFadeUp 0.85s ease both;
+}
+
+.posterSectionHeader span {
+    color: #5a2740;
+    background: rgba(255, 255, 255, 0.42);
+    border-color: rgba(90, 39, 64, 0.12);
+}
+
+.oceanPosterSection .posterSectionHeader span {
+    color: #075163;
+}
+
+.posterSectionHeader h2 {
+    font-size: 44px;
+    font-weight: 900;
+    color: #351827;
+    letter-spacing: -1px;
+    margin-bottom: 16px;
+}
+
+.oceanPosterSection .posterSectionHeader h2 {
+    color: #043847;
+}
+
+.posterSectionHeader p {
+    color: rgba(45, 24, 34, 0.76);
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+.oceanPosterSection .posterSectionHeader p {
+    color: rgba(4, 56, 71, 0.78);
+}
+
+.posterImageGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 34px;
+    align-items: start;
+}
+
+.posterDisplayCard {
+    padding: 26px;
+    border-radius: 34px;
+    background: rgba(255, 255, 255, 0.34);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.46);
+    box-shadow: 0 30px 90px rgba(40, 14, 26, 0.2);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    animation: posterFloatIn 0.9s ease both;
+}
+
+.posterDisplayCard:nth-child(2) {
+    animation-delay: 0.15s;
+}
+
+.posterDisplayCard:hover {
+    transform: translateY(-14px) scale(1.015);
+    box-shadow: 0 42px 100px rgba(28, 11, 20, 0.32);
+}
+
+.featuredPosterCard {
+    background: rgba(255, 255, 255, 0.46);
+}
+
+.posterCardText {
+    margin-bottom: 22px;
+}
+
+.posterCardText span {
+    color: #5a2740;
+    background: rgba(255, 255, 255, 0.52);
+    border-color: rgba(90, 39, 64, 0.14);
+    margin-bottom: 12px;
+}
+
+.oceanPosterSection .posterCardText span {
+    color: #075163;
+}
+
+.posterCardText h3 {
+    color: #351827;
+    font-size: 28px;
+    font-weight: 900;
+    margin: 0;
+}
+
+.oceanPosterSection .posterCardText h3 {
+    color: #043847;
+}
+
+.posterDisplayCard img {
+    width: 100%;
+    border-radius: 26px;
+    display: block;
+    box-shadow: 0 22px 55px rgba(0, 0, 0, 0.22);
+}
+
+.posterTwoColumn {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 34px;
+    align-items: stretch;
+}
+
+.posterReflectionCard,
+.posterPaletteCard {
+    padding: 44px;
+    border-radius: 34px;
+    background: rgba(255, 255, 255, 0.13);
+    backdrop-filter: blur(22px);
+    -webkit-backdrop-filter: blur(22px);
+    border: 1px solid rgba(255, 255, 255, 0.24);
+    box-shadow: 0 35px 95px rgba(0, 0, 0, 0.28);
+    animation: posterFadeUp 0.9s ease both;
+}
+
+.posterPaletteCard {
+    animation-delay: 0.12s;
+}
+
+.posterReflectionCard h2,
+.posterPaletteCard h2 {
+    color: #ffffff;
+    font-size: 36px;
+    font-weight: 900;
+    margin-bottom: 20px;
+    letter-spacing: -0.5px;
+}
+
+.posterReflectionCard p {
+    color: rgba(255, 255, 255, 0.82);
+    font-size: 17px;
+    line-height: 1.9;
+    margin: 0;
+}
+
+.posterPaletteCard img {
+    width: 100%;
+    border-radius: 24px;
+    display: block;
+    margin-top: 18px;
+    box-shadow: 0 24px 70px rgba(0, 0, 0, 0.28);
+}
+
+@keyframes posterFadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(34px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes posterFloatIn {
+    from {
+        opacity: 0;
+        transform: translateY(42px) scale(0.96);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+@media screen and (max-width: 991px) {
+
+    .posterImageGrid,
+    .posterTwoColumn {
+        grid-template-columns: 1fr;
+    }
+
+    .posterSectionHeader h2,
+    .posterReflectionCard h2,
+    .posterPaletteCard h2 {
+        font-size: 34px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+
+    .posterProjectSection,
+    .posterPaletteSection {
+        padding: 70px 0;
+    }
+
+    .posterProjectSection::before,
+    .posterPaletteSection::before {
+        inset: 22px;
+        border-radius: 26px;
+    }
+
+    .posterPageContainer {
+        width: 90%;
+    }
+
+    .posterDisplayCard,
+    .posterReflectionCard,
+    .posterPaletteCard {
+        padding: 24px;
+        border-radius: 26px;
+    }
+
+    .posterSectionHeader h2,
+    .posterReflectionCard h2,
+    .posterPaletteCard h2 {
+        font-size: 28px;
+    }
+
+    .posterCardText h3 {
+        font-size: 23px;
+    }
+}
