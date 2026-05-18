@@ -7,7 +7,7 @@ import Poster2Palette from '../assets/poster2-color-palette.png'
 export default function Poster2() {
     return (
         <>
-            <section className="heroSection posterHeroSection oceanPosterHero">
+            <section className="heroSection">
                 <Main>
                     <div className="row heroMainPart d-flex justify-content-around align-items-center">
                         <div className="col-md-10">
