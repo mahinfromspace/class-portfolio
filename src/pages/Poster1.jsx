@@ -54,6 +54,7 @@ export default function Poster1() {
             </section>
 
             <section className="posterPaletteSection">
+                
                 <div className="posterPageContainer">
                     <div className="posterTwoColumn">
                         <div className="posterReflectionCard">
