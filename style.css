@@ -8,7 +8,7 @@
 .heroSection {
     min-height: 100vh;
     width: 100%;
-    background: linear-gradient(#0000000a, #00000078), url(/class-portfolio/src/assets/hero-background.jpg);
+    background: linear-gradient(#0000000a, #00000078), url("/class-portfolio/src/assets/hero-background.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
