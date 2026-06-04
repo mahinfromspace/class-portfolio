@@ -1,6 +1,7 @@
 import Main from '../components/Main'
+import { Link } from 'react-router-dom'
 
-export default function () {
+export default function Presentations() {
     return (
         <section className="heroSection">
             <Main>
@@ -9,8 +10,18 @@ export default function () {
                         <div className="heroText">
                             <h1>Presentations</h1>
                             <p>
-                                This page will collect my presentation work for this class.
+                                This page includes my presentation assignments for this class. Each presentation page shows my work, topic, and learning progress during the course.
                             </p>
+
+                            <div className="presentationHeroLinks">
+                                <Link to="/presentations/1" className="presentationHeroButton">
+                                    View Presentation #1
+                                </Link>
+
+                                <Link to="/presentations/2" className="presentationHeroButton">
+                                    View Presentation #2
+                                </Link>
+                            </div>
                         </div>
                     </div>
                 </div>

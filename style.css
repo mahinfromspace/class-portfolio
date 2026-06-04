@@ -8,7 +8,7 @@
 .heroSection {
     min-height: 100vh;
     width: 100%;
-    background: linear-gradient(#0000000a, #00000078), url("/class-portfolio/src/assets/hero-background.jpg");
+    background: linear-gradient(#0000000a, #00000078), url("/class-portfolio/hero-background.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -514,7 +514,7 @@ main:hover {
     width: 100%;
     background:
         linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.48)),
-        url(/class-portfolio/src/assets/hero-background.jpg);
+        url(/class-portfolio/hero-background.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -1164,7 +1164,7 @@ main:hover {
 .posterHeroSection {
     background:
         linear-gradient(rgba(25, 10, 20, 0.25), rgba(5, 8, 15, 0.75)),
-        url(/class-portfolio/src/assets/hero-background.jpg);
+        url(/class-portfolio/hero-background.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -1174,7 +1174,7 @@ main:hover {
     background:
         radial-gradient(circle at 20% 20%, rgba(126, 221, 235, 0.22), transparent 30%),
         linear-gradient(135deg, rgba(0, 126, 145, 0.95), rgba(2, 41, 63, 0.95)),
-        url(/class-portfolio/src/assets/hero-background.jpg);
+        url(/class-portfolio/hero-background.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -1554,7 +1554,7 @@ main:hover {
 .lllpTwoHero {
     background:
         linear-gradient(rgba(0, 0, 0, 0.08), rgba(3, 24, 16, 0.62)),
-        url(/class-portfolio/src/assets/hero-background.jpg);
+        url(/class-portfolio/hero-background.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -1688,5 +1688,136 @@ main:hover {
 @media screen and (max-width: 991px) {
     .simpleCommandGrid {
         grid-template-columns: 1fr;
+    }
+}
+
+.presentationHeroLinks {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 1.5rem;
+}
+
+.presentationHeroButton {
+    display: inline-block;
+    padding: 0.8rem 1.3rem;
+    border: 1px solid #ffffff8a;
+    border-radius: 14px;
+    background: transparent;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.presentationHeroButton:hover {
+    background: #ffffff;
+    color: #111111;
+    text-decoration: none;
+    transform: translateY(-3px);
+}
+
+.presentationPageSection {
+    width: 100%;
+    padding: 4rem 0;
+    background: #f7f7f7;
+}
+
+.presentationContentBox {
+    background: #ffffff;
+    padding: 2.5rem;
+    border-radius: 24px;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.08);
+}
+
+.presentationContentBox h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #111111;
+}
+
+.presentationContentBox h3 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-top: 1.8rem;
+    margin-bottom: 0.7rem;
+    color: #222222;
+}
+
+.presentationContentBox p {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #333333;
+    margin-bottom: 1.5rem;
+}
+
+.pdfEmbedBox {
+    width: 100%;
+    height: 650px;
+    border-radius: 18px;
+    overflow: hidden;
+    border: 1px solid #dddddd;
+    background: #eeeeee;
+    margin: 1.5rem 0;
+}
+
+.presentationPdf {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.pdfButtonBox {
+    margin-bottom: 2rem;
+}
+
+.pdfOpenButton {
+    display: inline-block;
+    padding: 0.8rem 1.3rem;
+    border-radius: 14px;
+    background: #111111;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.pdfOpenButton:hover {
+    background: #333333;
+    color: #ffffff;
+    text-decoration: none;
+    transform: translateY(-3px);
+}
+
+.sourceList {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    margin-bottom: 2rem;
+}
+
+.sourceList a {
+    color: #111111;
+    font-weight: 600;
+    text-decoration: underline;
+    word-break: break-word;
+}
+
+.sourceList a:hover {
+    color: #555555;
+}
+
+@media (max-width: 768px) {
+    .presentationContentBox {
+        padding: 1.5rem;
+    }
+
+    .pdfEmbedBox {
+        height: 450px;
+    }
+
+    .presentationContentBox h2 {
+        font-size: 1.6rem;
     }
 }
