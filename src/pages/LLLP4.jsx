@@ -1,5 +1,8 @@
 import Main from '../components/Main'
 
+import learningResource from '../assets/lllp4-resource.png'
+import innerJoinScreenshot from '../assets/lllp4-inner.png'
+import leftJoinScreenshot from '../assets/lllp4-left.png'
 
 export default function LLLP4() {
     return (
@@ -11,8 +14,11 @@ export default function LLLP4() {
                             <div className="col-md-10">
                                 <div className="heroText lllpOneHeroText">
                                     <h1>LLLP #4</h1>
+
                                     <p>
-                                        For my fourth LLLP page, I learned how database tables can be connected using relationships and joins.
+                                        For my fourth LLLP page, I learned how database
+                                        tables connect using relationships, keys, and JOIN
+                                        commands.
                                     </p>
                                 </div>
                             </div>
@@ -20,28 +26,51 @@ export default function LLLP4() {
 
                         <div className="lllpOneGlassWrapper heroIntroGlass">
                             <div className="lllpOneHeader">
-                                <span>Hours 7-8</span>
+                                <span>Hours 7–8</span>
+
                                 <h2>Relationships and Joins</h2>
+
                                 <p>
-                                    In this session, I studied how two tables can connect with each other. I learned about primary keys, foreign keys, one-to-many relationships, INNER JOIN, and LEFT JOIN.
+                                    In this session, I studied how PostgreSQL tables can
+                                    connect with each other. I learned about primary keys,
+                                    foreign keys, one-to-many relationships, INNER JOIN,
+                                    and LEFT JOIN.
                                 </p>
                             </div>
 
                             <div className="row g-4 align-items-stretch">
-                                <div className="col-md-6">
+                                <div className="col-md-4">
                                     <div className="lllpOneGlassCard">
                                         <h3>What I Studied</h3>
+
                                         <p>
-                                            I studied how one table can store main information and another table can store related information. For example, one students table can connect to another courses table.
+                                            I studied primary keys, foreign keys,
+                                            one-to-many relationships, INNER JOIN, and LEFT
+                                            JOIN.
                                         </p>
                                     </div>
                                 </div>
 
-                                <div className="col-md-6">
+                                <div className="col-md-4">
                                     <div className="lllpOneGlassCard">
                                         <h3>My Experience</h3>
+
                                         <p>
-                                            Joins were harder than basic commands because I had to think about two tables at the same time. However, after seeing examples, I understood why joins are important in real databases.
+                                            JOIN queries were more difficult than basic SQL
+                                            because I had to understand two connected tables
+                                            at the same time.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div className="col-md-4">
+                                    <div className="lllpOneGlassCard">
+                                        <h3>Why It Matters</h3>
+
+                                        <p>
+                                            Relationships keep databases organized and allow
+                                            applications to retrieve connected information
+                                            without repeating data.
                                         </p>
                                     </div>
                                 </div>
@@ -51,148 +80,345 @@ export default function LLLP4() {
                 </Main>
             </section>
 
-            <section className="lllpOneLearningSection lllpFourPracticeSection">
+
+            <section className="lllpFourLearningSection">
                 <div className="lllpPageContainer">
-                    <div className="row g-4 align-items-center">
-                        <div className="col-md-6">
-                            <div className="lllpOneContentBlock">
-                                <span>Learning Process</span>
-                                <h2>My Hours 7-8</h2>
+                    <div className="lllpFourSectionHeading">
+                        <span>Learning Process</span>
+                        <h2>My Hours 7–8</h2>
+                    </div>
+
+                    <div className="lllpFourTimeline">
+                        <article className="lllpFourTimelineItem">
+                            <div className="timelineNumber">1</div>
+
+                            <div>
+                                <h3>Understanding Keys</h3>
+
                                 <p>
-                                    During this session, I learned that real databases usually do not keep all information in one big table. Instead, data is separated into different tables and connected using keys.
-                                </p>
-                                <p>
-                                    I practiced simple examples using a students table and a courses table. This helped me understand how related data can be combined using JOIN commands.
+                                    I first learned that a primary key uniquely
+                                    identifies each record in a table. I then
+                                    learned that a foreign key stores a reference
+                                    to the primary key of another table.
                                 </p>
                             </div>
-                        </div>
+                        </article>
 
-                        <div className="col-md-6">
-                            <div className="sqlTerminalCard">
-                                <div className="terminalTopBar">
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
+                        <article className="lllpFourTimelineItem">
+                            <div className="timelineNumber">2</div>
+
+                            <div>
+                                <h3>Creating Connected Tables</h3>
+
+                                <p>
+                                    I created a students table and a courses table.
+                                    The courses table contained a student_id column
+                                    that referenced the students table.
+                                </p>
+                            </div>
+                        </article>
+
+                        <article className="lllpFourTimelineItem">
+                            <div className="timelineNumber">3</div>
+
+                            <div>
+                                <h3>Practising INNER JOIN</h3>
+
+                                <p>
+                                    I used INNER JOIN to display only students who
+                                    had a matching course record. This helped me
+                                    understand how PostgreSQL combines related rows.
+                                </p>
+                            </div>
+                        </article>
+
+                        <article className="lllpFourTimelineItem">
+                            <div className="timelineNumber">4</div>
+
+                            <div>
+                                <h3>Comparing LEFT JOIN</h3>
+
+                                <p>
+                                    I used LEFT JOIN to display every student,
+                                    including students who did not have a matching
+                                    course. Their course value appeared as null.
+                                </p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section className="lllpFourPracticeSection">
+                <div className="lllpPageContainer">
+                    <div className="lllpFourPracticeLayout">
+                        <div className="lllpFourPracticeText">
+                            <span>Practice Example</span>
+
+                            <h2>Connecting Students and Courses</h2>
+
+                            <p>
+                                I used the student_id column to create a
+                                relationship between the students and courses
+                                tables. PostgreSQL compared the matching values
+                                when I ran the JOIN query.
+                            </p>
+
+                            <div className="lllpFourKeyNotes">
+                                <div>
+                                    <strong>Primary Key</strong>
+                                    <p>Uniquely identifies a row.</p>
                                 </div>
 
-                                <h3>Practice Example</h3>
+                                <div>
+                                    <strong>Foreign Key</strong>
+                                    <p>References a row in another table.</p>
+                                </div>
 
-                                <pre>{`SELECT students.name, courses.course_name
-FROM students
-INNER JOIN courses
-ON students.id = courses.student_id;`}</pre>
-
-                                <p>
-                                    This query connects two tables and shows student names with their course names.
-                                </p>
+                                <div>
+                                    <strong>JOIN</strong>
+                                    <p>Combines matching information.</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </section>
 
-            <section className="lllpOneTopicsSection lllpFourCommandsSection">
-                <div className="lllpPageContainer">
-                    <div className="lllpOneHeader">
-                        <span>Main Topics Covered</span>
-                        <h2>Relationships and Joins I Learned</h2>
-                        <p>
-                            I focused on how tables connect and how data can be combined from more than one table.
-                        </p>
-                    </div>
+                        <div className="lllpFourTerminal">
+                            <div className="terminalTopBar">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
 
-                    <div className="simpleCommandGrid">
-                        <div className="simpleCommandCard">
-                            <h3>Primary Key</h3>
-                            <p>
-                                I learned that a primary key uniquely identifies each row in a table.
-                            </p>
-
-                            <pre>{`id SERIAL PRIMARY KEY`}</pre>
-                        </div>
-
-                        <div className="simpleCommandCard">
-                            <h3>Foreign Key</h3>
-                            <p>
-                                I learned that a foreign key connects one table to another table.
-                            </p>
-
-                            <pre>{`student_id INT REFERENCES students(id)`}</pre>
-                        </div>
-
-                        <div className="simpleCommandCard">
-                            <h3>JOIN</h3>
-                            <p>
-                                I learned that JOIN is used to combine related data from two tables.
-                            </p>
-
-                            <pre>{`SELECT *
+                            <pre>{`SELECT
+    students.name,
+    courses.course_name
 FROM students
 INNER JOIN courses
-ON students.id = courses.student_id;`}</pre>
+ON students.student_id = courses.student_id;`}</pre>
                         </div>
-                    </div>
-
-                    <div className="commandExplanationBox">
-                        <h3>How Tables Connect</h3>
-                        <p>
-                            Overall, I learned that relationships make databases more organized. Instead of putting all information in one table, we can divide the data into separate tables and connect them using keys.
-                        </p>
-                        <p>
-                            A <strong>primary key</strong> identifies each record, and a <strong>foreign key</strong> connects one table to another. Then <strong>JOIN</strong> helps combine the related information when we need to view it together.
-                        </p>
                     </div>
                 </div>
             </section>
 
-            <section className="lllpOneScreenshotsSection lllpFourScreenshotsSection">
+            <section className="lllpFourCommandsSection">
                 <div className="lllpPageContainer">
-                    <div className="lllpOneHeader">
+                    <div className="lllpFourSectionHeading centered">
+                        <span>Main Topics Covered</span>
+                        <h2>Relationships and JOIN Commands</h2>
+
+                        <p>
+                            These were the main PostgreSQL concepts I practised
+                            during this session.
+                        </p>
+                    </div>
+
+                    <div className="lllpFourCommandGrid">
+                        <article className="lllpFourCommandCard">
+                            <div className="commandCardNumber">01</div>
+
+                            <h3>Primary Key</h3>
+
+                            <p>
+                                A primary key gives every record a unique
+                                identifier.
+                            </p>
+
+                            <pre>{`student_id SERIAL PRIMARY KEY`}</pre>
+                        </article>
+
+                        <article className="lllpFourCommandCard">
+                            <div className="commandCardNumber">02</div>
+
+                            <h3>Foreign Key</h3>
+
+                            <p>
+                                A foreign key connects a column to the primary key
+                                of another table.
+                            </p>
+
+                            <pre>{`student_id INT
+REFERENCES students(student_id)`}</pre>
+                        </article>
+
+                        <article className="lllpFourCommandCard">
+                            <div className="commandCardNumber">03</div>
+
+                            <h3>INNER JOIN</h3>
+
+                            <p>
+                                INNER JOIN returns only rows with matching values
+                                in both tables.
+                            </p>
+
+                            <pre>{`SELECT students.name,
+courses.course_name
+FROM students
+INNER JOIN courses
+ON students.student_id =
+courses.student_id;`}</pre>
+                        </article>
+
+                        <article className="lllpFourCommandCard">
+                            <div className="commandCardNumber">04</div>
+
+                            <h3>LEFT JOIN</h3>
+
+                            <p>
+                                LEFT JOIN returns every row from the first table,
+                                even when no matching row exists.
+                            </p>
+
+                            <pre>{`SELECT students.name,
+courses.course_name
+FROM students
+LEFT JOIN courses
+ON students.student_id =
+courses.student_id;`}</pre>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section className="lllpFourScreenshotsSection">
+                <div className="lllpPageContainer">
+                    <div className="lllpFourSectionHeading centered">
                         <span>Evidence of Learning</span>
-                        <h2>Screenshots</h2>
+                        <h2>Study Screenshots</h2>
+
                         <p>
-                            These screenshots show my practice with connected tables, keys, and joins.
+                            These screenshots show the resource I used and the
+                            practical JOIN queries I completed.
                         </p>
                     </div>
 
-                    <div className="screenshotGrid">
-                        <div className="screenshotPlaceholder small">
-                            <img src={ScreenshotOne} alt="Primary key and foreign key practice" className="img-fluid" />
-                        </div>
+                    <div className="lllpFourScreenshotList">
+                        <article className="lllpFourScreenshotRow">
+                            <div className="lllpFourScreenshotImage">
+                                <a
+                                    href="https://www.w3schools.com/sql/sql_join.asp"
+                                    target="_blank"
+                                    rel="noreferrer"
+                                >
+                                    <img
+                                        src={learningResource}
+                                        alt="SQL joins learning resource"
+                                    />
+                                </a>
+                            </div>
 
-                        <div className="screenshotPlaceholder small">
-                            <img src={ScreenshotTwo} alt="INNER JOIN practice" className="img-fluid" />
-                        </div>
+                            <div className="lllpFourScreenshotText">
+                                <span>Screenshot 01</span>
+                                <h3>Learning About SQL JOINs</h3>
 
-                        <div className="screenshotPlaceholder small">
-                            <img src={ScreenshotThree} alt="LEFT JOIN practice" className="img-fluid" />
-                        </div>
+                                <p>
+                                    I used this online resource to understand how
+                                    JOIN commands combine information from related
+                                    database tables.
+                                </p>
+
+                                <a
+                                    href="https://www.w3schools.com/sql/sql_join.asp"
+                                    target="_blank"
+                                    rel="noreferrer"
+                                >
+                                    View learning resource
+                                </a>
+                            </div>
+                        </article>
+
+                        <article className="lllpFourScreenshotRow reverse">
+                            <div className="lllpFourScreenshotImage">
+                                <img
+                                    src={innerJoinScreenshot}
+                                    alt="PostgreSQL INNER JOIN query and result"
+                                />
+                            </div>
+
+                            <div className="lllpFourScreenshotText">
+                                <span>Screenshot 02</span>
+                                <h3>INNER JOIN Practice</h3>
+
+                                <p>
+                                    I used INNER JOIN to display students with
+                                    matching course records. Only rows connected in
+                                    both tables appeared in the result.
+                                </p>
+                            </div>
+                        </article>
+
+                        <article className="lllpFourScreenshotRow">
+                            <div className="lllpFourScreenshotImage">
+                                <img
+                                    src={leftJoinScreenshot}
+                                    alt="PostgreSQL LEFT JOIN query and result"
+                                />
+                            </div>
+
+                            <div className="lllpFourScreenshotText">
+                                <span>Screenshot 03</span>
+                                <h3>LEFT JOIN Practice</h3>
+
+                                <p>
+                                    I used LEFT JOIN to show all students. Students
+                                    without a matching course still appeared, with
+                                    a null course value.
+                                </p>
+                            </div>
+                        </article>
                     </div>
                 </div>
             </section>
 
-            <section className="lllpOneReflectionSection lllpFourReflectionSection">
+            <section className="lllpFourReflectionSection">
                 <div className="lllpPageContainer">
-                    <div className="reflectionGlassCard">
-                        <span>Reflection</span>
-                        <h2>What I Learned About Myself</h2>
+                    <div className="lllpFourReflectionCard">
+                        <div>
+                            <span>Reflection</span>
+                            <h2>What I Learned About Myself</h2>
+                        </div>
 
-                        <p>
-                            In this session, I learned that database relationships are important for building real applications. Joins were more difficult than the previous SQL commands, but they helped me understand how real systems manage connected data.
-                        </p>
+                        <div className="lllpFourReflectionText">
+                            <p>
+                                This session showed me that database relationships
+                                require more planning than basic SQL commands. I
+                                understood the JOIN queries better after looking at
+                                the columns and identifying which keys connected
+                                the tables.
+                            </p>
 
-                        <p>
-                            I also learned that I need to draw or imagine the table structure before writing JOIN queries. This makes the logic easier to understand.
-                        </p>
+                            <p>
+                                INNER JOIN and LEFT JOIN initially looked similar,
+                                but comparing their results helped me understand the
+                                difference. INNER JOIN only returned matching
+                                records, while LEFT JOIN kept every record from the
+                                students table.
+                            </p>
 
-                        <div className="sourceLinks">
-                            <a href="https://www.postgresql.org/docs/" target="_blank" rel="noreferrer">
-                                PostgreSQL Documentation
-                            </a>
+                            <p>
+                                I learned that visual examples and practical queries
+                                are the most effective learning methods for me. I am
+                                motivated to continue because relationships and
+                                joins are important for real websites, customer
+                                systems, inventories, and data applications.
+                            </p>
 
-                            <a href="https://www.w3schools.com/sql/sql_join.asp" target="_blank" rel="noreferrer">
-                                W3Schools SQL Joins
-                            </a>
+                            <div className="sourceLinks">
+                                <a
+                                    href="https://www.postgresql.org/docs/current/tutorial-join.html"
+                                    target="_blank"
+                                    rel="noreferrer"
+                                >
+                                    PostgreSQL JOIN Tutorial
+                                </a>
+
+                                <a
+                                    href="https://www.w3schools.com/sql/sql_join.asp"
+                                    target="_blank"
+                                    rel="noreferrer"
+                                >
+                                    W3Schools SQL JOIN
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -200,3 +426,4 @@ ON students.id = courses.student_id;`}</pre>
         </>
     )
 }
+
