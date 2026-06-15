@@ -134,6 +134,15 @@ VALUES ('Mahin', 22);`}</pre>
                             <pre>{`SELECT * FROM students;`}</pre>
                         </div>
                     </div>
+                    <div className="commandExplanationBox">
+                        <h3>How These Commands Work Together</h3>
+                        <p>
+                            Overall, I practiced the basic flow of working with a database table. First, I used <strong>CREATE TABLE</strong> to make a new table called students. This table has columns like id, name, and age, so the database knows what type of information it should store.
+                        </p>
+                        <p>
+                            After creating the table, I used <strong>INSERT INTO</strong> to add one student’s information into the table. Then I used <strong>SELECT</strong> to view the data that was stored. So, in this practice, I learned the basic process of creating a place for data, adding data into it, and checking the saved data.
+                        </p>
+                    </div>
                 </div>
             </section>
 

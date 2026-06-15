@@ -549,8 +549,6 @@ main:hover {
     border-radius: 15px;
 }
 
-
-
 .lllpOneHeroText {
     color: #ffffff;
 }
@@ -1691,6 +1689,8 @@ main:hover {
     }
 }
 
+/* Presentation Pages */
+
 .presentationHeroLinks {
     display: flex;
     gap: 1rem;
@@ -1723,6 +1723,37 @@ main:hover {
     background: #f7f7f7;
 }
 
+/* Removes the duplicate navbar/glass container from the lower page section */
+.presentationPageSection main {
+    width: 85%;
+    min-height: auto;
+    background: transparent;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    border: none;
+    border-radius: 0;
+    margin: 0 auto;
+    box-shadow: none;
+    transition: none;
+}
+
+.presentationPageSection main:hover {
+    box-shadow: none;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+}
+
+.presentationPageSection .mainContainer {
+    min-height: auto;
+    display: block;
+    align-items: initial;
+}
+
+/* Hides the navbar that Main adds inside the lower content section */
+.presentationPageSection .navbar {
+    display: none !important;
+}
+
 .presentationContentBox {
     background: #ffffff;
     padding: 2.5rem;
@@ -1752,6 +1783,8 @@ main:hover {
     margin-bottom: 1.5rem;
 }
 
+/* Embedded PDF box */
+/* This keeps the PDF embedded but crops the browser PDF toolbar */
 .pdfEmbedBox {
     width: 100%;
     height: 650px;
@@ -1760,12 +1793,15 @@ main:hover {
     border: 1px solid #dddddd;
     background: #eeeeee;
     margin: 1.5rem 0;
+    position: relative;
 }
 
 .presentationPdf {
     width: 100%;
-    height: 100%;
+    height: calc(100% + 58px);
     border: none;
+    transform: translateY(-58px);
+    display: block;
 }
 
 .pdfButtonBox {
@@ -1809,6 +1845,14 @@ main:hover {
 }
 
 @media (max-width: 768px) {
+    .presentationPageSection {
+        padding: 3rem 0;
+    }
+
+    .presentationPageSection main {
+        width: 92%;
+    }
+
     .presentationContentBox {
         padding: 1.5rem;
     }
@@ -1817,7 +1861,245 @@ main:hover {
         height: 450px;
     }
 
+    .presentationPdf {
+        height: calc(100% + 58px);
+        transform: translateY(-58px);
+    }
+
     .presentationContentBox h2 {
         font-size: 1.6rem;
+    }
+}
+
+.commandExplanationBox {
+    margin-top: 34px;
+    padding: 34px;
+    border-radius: 30px;
+    background: rgba(255, 255, 255, 0.42);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.48);
+    box-shadow: 0 25px 70px rgba(15, 51, 34, 0.13);
+}
+
+.commandExplanationBox h3 {
+    color: #143b2a;
+    font-size: 28px;
+    font-weight: 800;
+    margin-bottom: 18px;
+}
+
+.commandExplanationBox p {
+    color: #395747;
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 14px;
+}
+
+.commandExplanationBox p:last-child {
+    margin-bottom: 0;
+}
+
+
+.lllpThreeHero,
+.lllpFourHero,
+.lllpFiveHero {
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.08), rgba(3, 24, 16, 0.62)),
+        url(/class-portfolio/hero-background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.lllpThreePracticeSection,
+.lllpFourPracticeSection,
+.lllpFivePracticeSection {
+    background:
+        radial-gradient(circle at 20% 20%, rgba(83, 151, 104, 0.22), transparent 30%),
+        linear-gradient(135deg, #0b2118 0%, #173a2a 55%, #07140f 100%);
+}
+
+.lllpThreeCommandsSection,
+.lllpFourCommandsSection,
+.lllpFiveCommandsSection {
+    background:
+        radial-gradient(circle at 20% 20%, rgba(132, 184, 145, 0.34), transparent 30%),
+        linear-gradient(135deg, #e7eee5 0%, #f5f7f3 55%, #d8e2d7 100%);
+}
+
+.lllpThreeScreenshotsSection,
+.lllpFourScreenshotsSection,
+.lllpFiveScreenshotsSection {
+    background:
+        radial-gradient(circle at 82% 22%, rgba(120, 184, 132, 0.25), transparent 28%),
+        linear-gradient(135deg, #0b2118 0%, #173a2a 50%, #08140f 100%);
+}
+
+.lllpThreeReflectionSection,
+.lllpFourReflectionSection,
+.lllpFiveReflectionSection {
+    background:
+        radial-gradient(circle at 18% 18%, rgba(157, 203, 166, 0.38), transparent 30%),
+        linear-gradient(135deg, #dfe8df 0%, #f4f7f2 50%, #cddacc 100%);
+}
+
+.commandExplanationBox {
+    margin-top: 34px;
+    padding: 34px;
+    border-radius: 30px;
+    background: rgba(255, 255, 255, 0.42);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.48);
+    box-shadow: 0 25px 70px rgba(15, 51, 34, 0.13);
+}
+
+.commandExplanationBox h3 {
+    color: #143b2a;
+    font-size: 28px;
+    font-weight: 800;
+    margin-bottom: 18px;
+}
+
+.commandExplanationBox p {
+    color: #395747;
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 14px;
+}
+
+.commandExplanationBox p:last-child {
+    margin-bottom: 0;
+}
+
+.screenshotPlaceholder img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 24px;
+}
+
+.lllpThreeCommandGrid {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.lllpLearningWrapper {
+    border: 1px solid rgba(255, 255, 255, 0.22);
+    border-radius: 28px;
+    padding: 40px;
+    background: rgba(7, 52, 37, 0.32);
+}
+
+.screenshotsOuterBox {
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 28px;
+    padding: 45px 30px;
+    background: rgba(10, 61, 43, 0.35);
+}
+
+.lllpScreenshotGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+    margin-top: 40px;
+}
+
+.lllpScreenshotCard {
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.22);
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.lllpScreenshotCard:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.18);
+}
+
+.lllpScreenshotCard>img,
+.lllpScreenshotCard>a img {
+    display: block;
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.lllpScreenshotCard>a {
+    display: block;
+}
+
+.screenshotText {
+    padding: 22px;
+}
+
+.screenshotText h3 {
+    margin-bottom: 12px;
+    color: #ffffff;
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.screenshotText p {
+    margin: 0;
+    color: rgba(255, 255, 255, 0.82);
+    font-size: 0.9rem;
+    line-height: 1.7;
+}
+
+.resourceButton {
+    display: inline-block;
+    margin-top: 18px;
+    padding: 10px 18px;
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    border-radius: 999px;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 0.85rem;
+    transition:
+        background 0.3s ease,
+        color 0.3s ease;
+}
+
+.resourceButton:hover {
+    background: #ffffff;
+    color: #123f2e;
+}
+
+.simpleCommandCard pre,
+.sqlTerminalCard pre {
+    overflow-x: auto;
+    white-space: pre-wrap;
+    word-break: break-word;
+}
+
+@media (max-width: 992px) {
+
+    .lllpThreeCommandGrid,
+    .lllpScreenshotGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .lllpScreenshotCard>img,
+    .lllpScreenshotCard>a img {
+        height: auto;
+        aspect-ratio: 16 / 9;
+    }
+}
+
+@media (max-width: 576px) {
+
+    .lllpLearningWrapper,
+    .screenshotsOuterBox {
+        padding: 24px 16px;
+        border-radius: 20px;
+    }
+
+    .screenshotText {
+        padding: 18px;
     }
 }

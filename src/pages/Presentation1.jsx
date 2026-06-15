@@ -44,11 +44,13 @@ export default function PresentationOne() {
                         </p>
 
                         <div className="pdfEmbedBox">
-                            <iframe
-                                src={pdfUrl}
-                                title="Presentation #1 PDF"
-                                className="presentationPdf"
-                            ></iframe>
+                            <div className="pdfEmbedBox">
+                                <iframe
+                                    src={pdfUrl}
+                                    title="Presentation #1 PDF"
+                                    className="presentationPdf"
+                                ></iframe>
+                            </div>
                         </div>
 
                         <div className="pdfButtonBox">
