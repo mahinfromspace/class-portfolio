@@ -61,7 +61,7 @@ export default function PresentationOne() {
 
                         <h2>Research Source and Materials Used</h2>
                         <p>
-                            For this presentation, I used different research sources and visual materials to explain circular reporting clearly. The ScienceDirect article helped me understand how fake news spreads through the Internet and social media, and how false information can affect individuals, society, and even countries. The article also explains fake news detection and describes features such as intentional creation, transmission, and public reaction. This connects to my presentation because circular reporting is one way false information can become stronger when it is repeated by different sources.
+                            For this presentation, I used different research sources and visual materials from different sources and from Canva to explain circular reporting clearly. The ScienceDirect article helped me understand how fake news spreads through the Internet and social media, and how false information can affect individuals, society, and even countries. The article also explains fake news detection and describes features such as intentional creation, transmission, and public reaction. This connects to my presentation because circular reporting is one way false information can become stronger when it is repeated by different sources.
                         </p>
 
                         <p>
