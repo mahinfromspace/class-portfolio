@@ -272,7 +272,49 @@ ORDER BY price ASC; `}</pre>
                     </div>
                 </div>
             </section>
+            <section className="lllpFiveSheetSection">
+                <div className="lllpPageContainer">
+                    <div className="lllpFiveSectionHeading centered">
+                        <span>Interactive Project Data</span>
 
+                        <h2>Product Inventory Spreadsheet</h2>
+
+                        <p>
+                            This embedded spreadsheet shows the data used for my final
+                            product inventory project. It allows the table and its records
+                            to be viewed directly from this page.
+                        </p>
+                    </div>
+
+                    <div className="lllpFiveSheetCard">
+                        <div className="lllpFiveSheetTopBar">
+                            <div className="sheetDots">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+
+                            <p>Published Google Spreadsheet</p>
+
+                            <a
+                                href="https://docs.google.com/spreadsheets/d/e/2PACX-1vQk7sWEDAamh92i8FwZ_POySVoFZzFQUIkmBJuVWNvCyPdnfosWBt63BPyG-oIvbqSPKm7h6utSKLiR/pubhtml?gid=2053368577&single=true"
+                                target="_blank"
+                                rel="noreferrer"
+                            >
+                                Open Full Sheet ↗
+                            </a>
+                        </div>
+
+                        <div className="lllpFiveSheetEmbed">
+                            <iframe
+                                src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQk7sWEDAamh92i8FwZ_POySVoFZzFQUIkmBJuVWNvCyPdnfosWBt63BPyG-oIvbqSPKm7h6utSKLiR/pubhtml?gid=2053368577&single=true"
+                                title="LLLP 5 Product Inventory Spreadsheet"
+                                loading="lazy"
+                            ></iframe>
+                        </div>
+                    </div>
+                </div>
+            </section>
             <section className="lllpFiveSkillsSection">
                 <div className="lllpPageContainer">
                     <div className="lllpFiveSectionHeading centered">
