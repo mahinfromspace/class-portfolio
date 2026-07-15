@@ -6274,3 +6274,389 @@ body {
         height: 560px;
     }
 }
+
+/* =========================================================
+   HOME COURSE WRAP-UP
+========================================================= */
+
+.homeWrapUpSection {
+    position: relative;
+    padding: 105px 0;
+    overflow: hidden;
+    background:
+        radial-gradient(circle at 12% 15%,
+            rgba(92, 177, 113, 0.25),
+            transparent 30%),
+        radial-gradient(circle at 88% 82%,
+            rgba(31, 116, 69, 0.3),
+            transparent 34%),
+        linear-gradient(135deg,
+            #071a12 0%,
+            #0e3221 50%,
+            #06140e 100%);
+}
+
+.homeWrapUpSection::before {
+    content: "";
+    position: absolute;
+    inset: 42px 5%;
+    border: 1px solid rgba(199, 255, 214, 0.12);
+    border-radius: 38px;
+    pointer-events: none;
+}
+
+/* Header colors for the dark section */
+
+.homeWrapUpSection .homeJourneyHeader>span {
+    color: #bdf5c9;
+    border-color: rgba(189, 245, 201, 0.24);
+    background: rgba(189, 245, 201, 0.08);
+}
+
+.homeWrapUpSection .homeJourneyHeader h2 {
+    color: #ffffff !important;
+}
+
+.homeWrapUpSection .homeJourneyHeader p {
+    color: #c3d8c9 !important;
+}
+
+/* Cards */
+
+.homeWrapUpGrid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 22px;
+    margin-top: 42px;
+}
+
+.homeWrapUpCard {
+    position: relative;
+    min-height: 340px;
+    padding: 32px;
+    overflow: hidden;
+    text-align: left;
+    border: 1px solid rgba(201, 251, 212, 0.14);
+    border-radius: 29px;
+    background:
+        linear-gradient(145deg,
+            rgba(27, 83, 56, 0.76),
+            rgba(8, 38, 25, 0.82));
+    box-shadow: 0 25px 65px rgba(0, 17, 10, 0.32);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.homeWrapUpCard::after {
+    content: "";
+    position: absolute;
+    right: -90px;
+    bottom: -100px;
+    width: 210px;
+    height: 210px;
+    border-radius: 50%;
+    background: rgba(126, 220, 148, 0.08);
+    transition: transform 0.45s ease;
+}
+
+.homeWrapUpCard:hover {
+    transform: translateY(-8px);
+    border-color: rgba(170, 245, 188, 0.35);
+    box-shadow: 0 35px 80px rgba(0, 20, 12, 0.45);
+}
+
+.homeWrapUpCard:hover::after {
+    transform: scale(1.5);
+}
+
+/* Number */
+
+.homeWrapUpNumber {
+    position: relative;
+    z-index: 2;
+    display: grid;
+    place-items: center;
+    width: 62px;
+    height: 62px;
+    margin-bottom: 25px;
+    color: #aeeebb;
+    border: 1px solid rgba(174, 238, 187, 0.2);
+    border-radius: 21px;
+    background: rgba(174, 238, 187, 0.09);
+    font-size: 1rem;
+    font-weight: 900;
+    letter-spacing: 0.1em;
+}
+
+/* Card text */
+
+.homeWrapUpCardBody {
+    position: relative;
+    z-index: 2;
+}
+
+.homeWrapUpCardBody h3 {
+    margin: 0 0 14px;
+    color: #ffffff !important;
+    font-size: 1.4rem;
+    font-weight: 800;
+    line-height: 1.4;
+}
+
+.homeWrapUpCardBody p {
+    margin: 0;
+    color: #c8ded0 !important;
+    font-size: 0.96rem;
+    line-height: 1.8;
+    opacity: 1;
+}
+
+/* Background glow */
+
+.homeWrapUpGlow {
+    position: absolute;
+    right: -120px;
+    bottom: -140px;
+    width: 380px;
+    height: 380px;
+    border-radius: 50%;
+    background: rgba(87, 182, 111, 0.18);
+    filter: blur(90px);
+    pointer-events: none;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+    .homeWrapUpSection {
+        padding: 80px 0;
+    }
+
+    .homeWrapUpSection::before {
+        inset: 25px 16px;
+        border-radius: 28px;
+    }
+
+    .homeWrapUpGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .homeWrapUpCard {
+        min-height: auto;
+        padding: 26px;
+    }
+}
+
+/* =========================================================
+   HERO SCROLL-TO-WRAP-UP BUTTON
+========================================================= */
+
+.homeHeroSection {
+    position: relative;
+}
+
+/* Button container */
+
+.homeScrollIndicator {
+    position: absolute;
+    z-index: 10;
+    left: 50%;
+    bottom: 24px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+
+    padding: 0;
+    margin: 0;
+
+    color: #d9f8df;
+    border: none;
+    outline: none;
+    background: transparent;
+
+    font: inherit;
+    text-decoration: none;
+    cursor: pointer;
+    appearance: none;
+    -webkit-appearance: none;
+
+    transform: translateX(-50%);
+}
+
+/* Button label */
+
+.homeScrollIndicator>span {
+    color: #d9f8df;
+    font-size: 0.67rem;
+    font-weight: 800;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    white-space: nowrap;
+    text-shadow: 0 2px 14px rgba(0, 0, 0, 0.55);
+    transition:
+        color 0.25s ease,
+        transform 0.25s ease;
+}
+
+/* Circular arrow container */
+
+.homeScrollArrow {
+    position: relative;
+
+    display: grid;
+    place-items: center;
+
+    width: 44px;
+    height: 44px;
+
+    border: 1px solid rgba(217, 248, 223, 0.5);
+    border-radius: 50%;
+
+    background: rgba(217, 248, 223, 0.12);
+    box-shadow:
+        0 12px 30px rgba(0, 24, 13, 0.3),
+        inset 0 0 15px rgba(217, 248, 223, 0.05);
+
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    animation: homeScrollBounce 1.8s ease-in-out infinite;
+
+    transition:
+        background 0.25s ease,
+        border-color 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+/* Pulsing circle */
+
+.homeScrollArrow::before {
+    content: "";
+
+    position: absolute;
+    inset: -6px;
+
+    border: 1px solid rgba(217, 248, 223, 0.22);
+    border-radius: 50%;
+
+    animation: homeScrollPulse 1.8s ease-out infinite;
+}
+
+/* Arrow shape */
+
+.homeScrollArrow i {
+    display: block;
+
+    width: 10px;
+    height: 10px;
+
+    margin-top: -4px;
+
+    border-right: 2px solid #d9f8df;
+    border-bottom: 2px solid #d9f8df;
+
+    transform: rotate(45deg);
+}
+
+/* Hover effects */
+
+.homeScrollIndicator:hover>span {
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+.homeScrollIndicator:active {
+    border: none
+}
+
+.homeScrollIndicator:hover .homeScrollArrow {
+    border-color: #d9f8df;
+    background: rgba(217, 248, 223, 0.22);
+    box-shadow:
+        0 15px 36px rgba(0, 24, 13, 0.4),
+        0 0 24px rgba(167, 240, 183, 0.18);
+}
+
+/* Keyboard focus */
+
+.homeScrollIndicator:focus-visible {
+    outline: none;
+}
+
+.homeScrollIndicator:focus-visible .homeScrollArrow {
+    outline: 3px solid rgba(217, 248, 223, 0.5);
+    outline-offset: 5px;
+}
+
+/* Moving-down animation */
+
+@keyframes homeScrollBounce {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(9px);
+    }
+}
+
+/* Expanding pulse animation */
+
+@keyframes homeScrollPulse {
+    0% {
+        opacity: 0.8;
+        transform: scale(0.82);
+    }
+
+    100% {
+        opacity: 0;
+        transform: scale(1.4);
+    }
+}
+
+/* Prevent wrap-up heading from touching the top */
+
+.homeWrapUpSection {
+    scroll-margin-top: 20px;
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+    .homeScrollIndicator {
+        bottom: 16px;
+        gap: 8px;
+    }
+
+    .homeScrollIndicator>span {
+        font-size: 0.58rem;
+    }
+
+    .homeScrollArrow {
+        width: 39px;
+        height: 39px;
+    }
+
+    .homeScrollArrow i {
+        width: 9px;
+        height: 9px;
+    }
+}
+
+/* Accessibility */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .homeScrollArrow,
+    .homeScrollArrow::before {
+        animation: none;
+    }
+}
